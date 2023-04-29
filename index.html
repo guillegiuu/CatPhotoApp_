@@ -13,7 +13,8 @@
     <h1>Cat Photo App</h1>
     <section>
       <h2>Cat Photos</h2>
-      <p>Más información sobre <a target="_blank" href="https://freecatphotoapp.com">Cat Photos</a> en nuestra Galería</p>
+      <p>Más información sobre <a target="_blank" href="https://freecatphotoapp.com">Cat Photos</a> en nuestra Galería
+      </p>
       <a href="https://freecatphotoapp.com"><img
           src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
           alt="A cute orange cat lying on its back"></a>
@@ -27,13 +28,14 @@
         <li>Atún</li>
       </ul>
       <figure>
-        <img src="https://imgs.search.brave.com/2bAveyqmVXDPQKpXcvt4TwSOp_ghsTIZaHLZl-YxD-Q/rs:fit:420:420:1/g:ce/aHR0cHM6Ly9zb2Rp/bWFjLnNjZW5lNy5j/b20vaXMvaW1hZ2Uv/U29kaW1hY0NMLzMw/ODgzMjQ_Zm10PWpw/ZyZmaXQ9Y29uc3Ry/YWluLDEmd2lkPTQy/MCZoZWk9NDIw"
+        <img
+          src="https://imgs.search.brave.com/2bAveyqmVXDPQKpXcvt4TwSOp_ghsTIZaHLZl-YxD-Q/rs:fit:420:420:1/g:ce/aHR0cHM6Ly9zb2Rp/bWFjLnNjZW5lNy5j/b20vaXMvaW1hZ2Uv/U29kaW1hY0NMLzMw/ODgzMjQ_Zm10PWpw/ZyZmaXQ9Y29uc3Ry/YWluLDEmd2lkPTQy/MCZoZWk9NDIw"
           alt="Purina Cat">
         <figcaption>Gatos <em>adoran</em> whiskas</figcaption>
       </figure>
       <h3>Las 3 cosas más odiadas por los Gatos: </h3>
       <ol>
-        <li>Tratamiento Antipulgas</li>
+        <li>Veterinarios</li>
         <li>Ruidos Molestos</li>
         <li>Gatos Vecinos</li>
       </ol>
@@ -46,7 +48,19 @@
     <section>
       <h2>Cat Form</h2>
       <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Al Gato le gusta estar adentro o afuera de tu casa? </legend>
+          <label><input id="adentro" name="adentro-afuera" type="radio" value="adentro">Adentro</label>
+          <label><input id="afuera" name="adentro-afuera" type="radio" value="afuera">Afuera</label>
+        </fieldset>
+        <fieldset>
+          <legend>¿Cuál es la personalidad de tu Gato?</legend>
+          <input id="mimoso" type="checkbox" name="personalidad" value="mimoso"> <label for="mimoso">Mimoso</label>
+          <input id="holgazán" type="checkbox" name="personalidad" value="holgazán"> <label for="holgazán"> Holgazán</label>
+          <input id="energético" type="checkbox" name="personalidad" value="energético"> <label for="energético"> Frenético</label>
+        </fieldset>
         <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
