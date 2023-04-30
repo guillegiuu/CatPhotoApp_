@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AppCatfreeCode</title>
+  <title>CatPhotoApp</title>
 </head>
 
 <body>
@@ -50,20 +50,26 @@
       <form action="https://freecatphotoapp.com/submit-cat-photo">
         <fieldset>
           <legend>Al Gato le gusta estar adentro o afuera de tu casa? </legend>
-          <label><input id="adentro" name="adentro-afuera" type="radio" value="adentro">Adentro</label>
+          <label><input id="adentro" name="adentro-afuera" type="radio" value="adentro" checked>Adentro</label>
           <label><input id="afuera" name="adentro-afuera" type="radio" value="afuera">Afuera</label>
         </fieldset>
         <fieldset>
           <legend>¿Cuál es la personalidad de tu Gato?</legend>
-          <input id="mimoso" type="checkbox" name="personalidad" value="mimoso"> <label for="mimoso">Mimoso</label>
-          <input id="holgazán" type="checkbox" name="personalidad" value="holgazán"> <label for="holgazán"> Holgazán</label>
-          <input id="energético" type="checkbox" name="personalidad" value="energético"> <label for="energético"> Frenético</label>
+          <input id="mimoso" type="checkbox" name="personalidad" value="mimoso" checked> <label
+            for="mimoso">Mimoso</label>
+          <input id="holgazán" type="checkbox" name="personalidad" value="holgazán"> <label for="holgazán">
+            Holgazán</label>
+          <input id="energético" type="checkbox" name="personalidad" value="energético"> <label for="energético">
+            Frenético</label>
         </fieldset>
         <input type="text" name="catphotourl" placeholder="cat photo URL" required>
         <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
+  <footer>
+    <p> No Copyright - <a href="https://www.freecodecamp.org" target="_blank">Guille Giu</a></p>
+  </footer>
 </body>
 
 </html>
